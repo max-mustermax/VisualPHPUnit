@@ -38,7 +38,7 @@
 ini_set('display_errors', 1);
 
 // The directory where this application is installed
-define("BASE_INSTALL", realpath(__DIR__)); 
+define("BASE_INSTALL", realpath(__DIR__));
 
 // The directory where PHPUnit is installed
 define('PHPUNIT_INSTALL', '/usr/share/pear/PHPUnit');
@@ -78,6 +78,11 @@ define('DATABASE_NAME', 'vpu');
 define('DATABASE_HOST', 'localhost');
 define('DATABASE_USER', 'root');
 define('DATABASE_PASS', 'admin');
+
+// The PHPUnit XML configuration file to use
+// (set to false to disable)
+define('CONFIG_XML_FILE', false);
+//define('CONFIG_XML_FILE', BASE_INSTALL . '/phpunit.xml');
 
 // Paths to any necessary bootstraps
 $bootstraps = array(
